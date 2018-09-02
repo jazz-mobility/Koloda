@@ -765,4 +765,10 @@ open class KolodaView: UIView, DraggableCardDelegate {
             }
         }
     }
+	
+public func changeCurrentCardIndex(to index:Int) {
+        clear()
+        currentCardIndex = index
+        reloadData()
+    }
 }
